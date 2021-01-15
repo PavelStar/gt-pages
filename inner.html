@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+
+
+    <header class="main-header">
+
+
+        <div class="main-header__contacts contacts">
+
+            <div class="contacts__wrapper">
+                <div class="contacts__inner">
+                    <p class="contacts__title">Школа тайского бокса в москве </p>
+                    <div class="contacts__phones-wrapper">
+                        <div class="contacts__phones-block">
+                            <span class="contacts__phone">8(916)807-21-21</span>
+                            <a class="contacts__phone"
+                                href="https://api.whatsapp.com/send?phone=79168072121">8(977)291-33-69</a>
+                        </div>
+                        <a class="contacts__watsapp-block" href="https://api.whatsapp.com/send?phone=79168072121">
+                            <span class="contacts__watsapp">WhatsApp</span>
+                            <span class="contacts__watsapp-time">с 10:00 до 20:00</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="contacts__callback-inner"  href="#form-section">
+                    <span class="contacts__callback-text">Заказать звонок</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="main-header__inner">
+
+            <button class="main-header__menu-open" type="button" data-btn="menu">
+                <div class="burger"></div>	
+            </button>
+
+            <!-- <button class="main-header__menu-open main-header__icon-wrapper button-open" type="button" data-btn="menu">
+                <svg width="32" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="main-header__icon" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 1a1 1 0 011-1h30a1 1 0 110 2H1a1 1 0 01-1-1zM0 11a1 1 0 011-1h30a1 1 0 110 2H1a1 1 0 01-1-1zM0 21a1 1 0 011-1h30a1 1 0 110 2H1a1 1 0 01-1-1z"
+                        fill="#332B2B" />
+                </svg>
+            </button>
+            <button class="main-header__menu-close main-header__icon-wrapper close" type="button" data-btn="menu">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="main-header__icon" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M.708.293a1 1 0 011.414 0l21.213 21.213a1 1 0 11-1.414 1.415L.708 1.707a1 1 0 010-1.414z"
+                        fill="#332B2B" />
+                    <path class="main-header__icon" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M.962 23.088a1 1 0 010-1.414L22.175.46a1 1 0 111.414 1.415L2.376 23.088a1 1 0 01-1.414 0z"
+                        fill="#332B2B" />
+                </svg>
+            </button> -->
+
+            <a class="main-header__logo" href="index.html">
+                <img class="main-header__logo-img" src="img/logo.svg" alt="Raja muay thai" width="76" height="31">
+            </a>
+
+
+            <nav class="main-header__menu menu close" data-nav="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#price">Расписание и цены</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link about-anc" href="#about">О школе</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#coach">Тренер</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#achievements">Достижения</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#gallery">Фотогалерея</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="articles.html">Статьи</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="main-header__callback-inner" href="#form-section">
+                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="main-header__icon"
+                        d="M5.961 30c1.308 0 3.144-.473 5.894-2.01 3.345-1.874 5.931-3.605 9.258-6.922 3.207-3.204 4.767-5.279 6.951-9.253 2.468-4.486 2.047-6.838 1.577-7.843-.56-1.202-1.387-1.92-2.455-2.633A11.81 11.81 0 0025.268.32L25.083.24c-.331-.15-.834-.375-1.47-.134-.425.16-.804.485-1.397 1.071-1.217 1.2-2.88 3.873-3.494 5.185-.412.885-.684 1.469-.685 2.124 0 .767.386 1.358.854 1.996.088.12.175.235.26.346.509.67.62.863.547 1.208-.15.695-1.263 2.762-3.094 4.588-1.83 1.826-3.838 2.87-4.535 3.018-.36.077-.558-.04-1.25-.567-.099-.076-.2-.154-.307-.232-.714-.531-1.278-.907-2.027-.907h-.004c-.651 0-1.21.283-2.134.749-1.205.608-3.959 2.249-5.166 3.467-.588.592-.915.97-1.075 1.394-.242.638-.014 1.138.134 1.473.024.056.052.116.08.184.283.668.625 1.309 1.025 1.914.712 1.065 1.433 1.889 2.637 2.45.619.292 1.295.44 1.98.433z"
+                        fill="#1A2E3B" />
+                </svg>
+            </a>
+
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+
+        <section class="services">
+            <h2 class="services__title second-title" id="services">Наши секции</h2>
+
+            <div class="services__list">
+                <div class="services__controls-desktop">
+                    <button class="services__toggle-desktop  toggle-active third-title" type="button"
+                        data-tab="kids">Детская группа</button>
+                    <button class="services__toggle-desktop  third-title" type="button" data-tab="rokie">Секция для
+                        новичков</button>
+                    <button class="services__toggle-desktop  third-title" type="button" data-tab="women">Занятия для
+                        женщин</button>
+                    <button class="services__toggle-desktop  third-title" type="button"
+                        data-tab="personal">Индивидуальные тренировки</button>
+                </div>
+
+                <div class="services__content-area">
+                    <ul class="services__wrapper">
+
+                        <li class="services__item item-active" data-tab="kids">
+                            <input class="services__checkbox visually-hidden" type="checkbox" id="kids-group" checked>
+                            <label class="services__toggle-mobile third-title" for="kids-group">Детская группа</label>
+                            <div class="services__content">
+                                <div class="services__inner services__inner--inner">
+                                    <div class="services__img-wrapper services__img-wrapper--inner">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="img/kids-desktop-2.jpg">
+                                            <img class="services__img services__img--inner" src="img/kids-mobile.jpg"
+                                                alt="Детская группа" width="283" height="290">
+                                        </picture>
+                                    </div>
+                                    <p class="services__text services__text--inner">
+                                        Тайский бокс для детей — это замечательная возможность для ребёнка познакомиться
+                                        с удивительным миром древнего
+                                        боевого искусства. Это спорт, который учит строгим правилам честного поединка
+                                        и развивает волевые качества. Занятия
+                                        в нашем зале базируются на развитие всех физических навыков ребёнка — силы,
+                                        ловкости, быстроты реакции.
+                                        <span>
+                                            Тренировки
+                                            способствуют физическому, психоэмоциональному развитию, а также направлены
+                                            на духовное развитие личности ребёнка.
+                                        </span>
+                                        <span>
+                                            Правилами любительской Федерацией тайского бокса России запрещены удары
+                                            в голову у детей в возрасте до 12 лет.
+                                            А соревнования проводятся в защитном жилете, шлеме для тайского бокса
+                                            и мягкой защитой ног и локтей.
+                                        </span>
+                                        <span>
+                                            В детской группе основная работа на тренировке ведётся на снарядах. А работа
+                                            с партнёром в парах под надзором
+                                            тренера и далеко не сразу.
+                                        </span>
+                                        <span>
+                                            Тайский бокс — интеллектуальный вид единоборства. В детской группе тайского
+                                            бокса ребёнок не допускается
+                                            до спаррингов, пока не выучится и не отработает все необходимые удары
+                                            и защиты для ведения поединка в ринге.
+                                            С самого начала в единоборствах мало кто планирует ребёнку спортивную
+                                            карьеру. Но может повернуться и так:
+                                            позанимавшись в режиме «для себя» и «чтобы было», ваш ребёнок начинает
+                                            показывать отличные результаты на занятиях.
+                                            Тогда тренер может предложить более серьёзную подготовку к соревнованиям
+                                            по тайскому боксу.
+                                        </span>
+                                        Задача тренера морально подготовить начинающего спортсмена к выходу за канаты
+                                        ринга. А задача маленького спортсмена
+                                        не просто махать руками и ногами как мельница, а просчитать действия оппонента
+                                        и продемонстрировать красивую технику
+                                        для победы в поединке.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="services__item" data-tab="rokie">
+                            <input class="services__checkbox visually-hidden" type="checkbox" id="rokie-group">
+                            <label class="services__toggle-mobile third-title" for="rokie-group">Секция для
+                                новичков</label>
+                            <div class="services__content">
+                                <div class="services__inner services__inner--inner">
+                                    <div class="services__img-wrapper services__img-wrapper--inner">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="img/rookie-desktop-2.jpg">
+                                            <img class="services__img" src="img/rookie-mobile.jpg" alt="Детская группа"
+                                                width="283" height="290">
+                                        </picture>
+                                    </div>
+                                    <p class="services__text services__text--inner">
+                                        Если вы уже решили заниматься тайским боксом, то следующая информация поможет
+                                            вам убедиться в правильности своего
+                                            решения. Что в первую очередь надо знать новичку? Тайский бокс, как вид
+                                            физической активности подходит любому
+                                            человеку без серьёзных заболеваний и медицинских противопоказаний. Тайский бокс
+                                            - это отличный выбор для достижения
+                                            начинающему таких целей как: укрепление здоровья и улучшение физической формы
+                                            тела, кроме того, разнообразие
+                                            тренировочных программ на занятиях тайским боксом прекрасно развивают все
+                                            физические качества (силу, скорость,
+                                            выносливость, координацию и гибкость).
+                                        <span>
+                                            Ещё одним важным плюсом муай тай является психологическая закалка. Являясь
+                                            боевым искусством тайский бокс
+                                            способствует развитию таких качеств как : уверенность, целеустремлённость,
+                                            упорство, смелость и решительность. Если
+                                            же перед вами стоит задача научиться самообороне, то тайский бокс то что
+                                            нужно вам. Так как именно муай тай
+                                            считается жёстким и наиболее действенным боевым оружием. Выбирая тайский
+                                            бокс, вы выбираете здоровый и активный
+                                            образ жизни.
+                                        </span>
+                                        <span>
+                                            Очень часто люди занимающиеся тайским боксом (Muay Thai) зациклены на
+                                            физическом аспекте, брутальности, этого вида
+                                            единоборства. Они задаются вопросами ,,набивки голени" и ,,накачки мышц" или
+                                            ,,спаррингах" на каждой тренировке.
+                                            Получая впоследствии травмы в виде разбитых голеней ног, синяков под глазами
+                                            и т.п. Приходит разочарование и мысли
+                                            что этот вид спорта исключительно для избранных. На самом деле как только вы
+                                            преодолеете это мышление и начнёте
+                                            принимать Muay Thai как игру в шашки или шахматы вам откроется другая
+                                            сторона тайского бокса.
+                                        </span>
+                                            Существуют залы где вместо учебных тренировок с партнёром предлагают банальный
+                                            мордобой. На самом деле это должно
+                                            расцениваться как признак слабости и отсутствие дисциплины. Если вы
+                                            контролируете свои эмоции и стараетесь точно
+                                            следовать указаниям тренера, то обязательно укрепите своё тело не только
+                                            физически. Станете более уверенными духовно
+                                            не только в тренировочном зале но и на открытых рингах и соревнованиях высокого
+                                            уровня.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="services__item" data-tab="women">
+                            <input class="services__checkbox visually-hidden" type="checkbox" id="women-group">
+                            <label class="services__toggle-mobile third-title" for="women-group">Занятия для
+                                женщин</label>
+                            <div class="services__content">
+                                <div class="services__inner services__inner--inner">
+                                    <div class="services__img-wrapper services__img-wrapper--inner">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="img/women-desktop-2.jpg">
+                                            <img class="services__img" src="img/women-mobile.jpg" alt="Детская группа"
+                                                width="283" height="290">
+                                        </picture>
+                                    </div>
+                                    <p class="services__text services__text--inner">
+                                        В современном мире каждая девушка хочет уметь постоять за себя. Также большая
+                                        часть из них заботится о своей
+                                        внешности. Именно из-за этого тайский бокс набирает большую популярность среди
+                                        прекрасной части населения нашей
+                                        планеты. Дамы ломают стереотипы о своей слабости доказывая всем, а в первую
+                                        очередь себе, что непреодолимых преград
+                                        не существует. Несмотря на то что муай тай контактный вид единоборства, девушек
+                                        занимающихся этим видом спорта
+                                        становится всё больше с каждым днём. Это не удивительно, ведь пользы от
+                                        тренировок в тайском боксе очень много.
+                                        <span class="services__text-dots">
+                                            Занятия тайским боксом заменяют комплексы упражнений на растяжку и отдельные
+                                            упражнения для мышц ягодиц, пресса, ног
+                                            и груди. Это позволяет поддерживать свою фигуру в форме, не прилагая отдельных
+                                            усилий.
+                                        </span>
+                                        
+                                        <span class="services__text-dots">
+                                            Занятия тайским боксом заменяют комплексы упражнений на растяжку и отдельные
+                                            упражнения для мышц ягодиц, пресса, ног
+                                            и груди. Это позволяет поддерживать свою фигуру в форме, не прилагая отдельных
+                                            усилий.
+                                        </span>
+                                            
+                                            
+                                        <span class="services__text-dots">
+                                            Постоянные тренировки, при условии разумной диеты, способствуют нормализации
+                                            (сбросу) веса и улучшению фигуры.
+                                        </span>
+                                        <span class="services__text-dots">
+                                            Занимаясь тайским боксом вы станете более ловкой, грациозной и изящной.
+                                        </span> 
+                                        <span class="services__text-dots">
+                                            После нескольких месяцев регулярных тренировок в зале вы начнёте чувствовать
+                                                себя более уверенно, потому что поймёте
+                                                что можете дать отпор хулигану.
+                                        </span>      
+                                        <span class="services__text-dots">
+                                            Чем дольше девушка посещает тренировки. тем лучше она владеет самообороной.
+                                                Тренировочные занятия в нашем зале
+                                                включают в себя упражнения на координацию движений, силу, ловкость и растяжку,
+                                                благодаря которым происходит
+                                                комплексное развитие тела. Польза от тренировок тайским боксом большая и намного
+                                                полнее, чем от обычных занятий
+                                                фитнесом. Уже после первых тренировок тайским боксом девушки отмечают перемены в
+                                                себе и своём мироощущении.
+                                        </span> 
+                                        <span class="services__text-dots">
+                                            Занятия тайским боксом помогают снять психоэмоциональное напряжение. Всё просто:
+                                                регулярный выплеск негативных
+                                                эмоций не позволит развиваться вашей хандре и плохому настроению.
+                                        </span>    
+                                        
+                                        <span>
+                                            Может девушка или женщина заниматься тайским боксом? Такие вопросы часто
+                                            возникают у многих людей.
+                                        </span>
+
+                                        <span>
+                                            Вопреки распространённому мнению,что тайский бокс это жёсткое боевое исскуство
+                                            "не для девчонок", девушек в этом
+                                            спорте много. И они часто достигают более серьёзных результатов чем юноши. В
+                                            настоящее время конкуренции у женщин в
+                                            этой области гораздо меньше чем у мужчин.
+                                        </span>
+                                        <span>
+
+                                        </span>
+                                        <span>
+                                                И далеко не все девушки такие уж хрупкие существа. Даже если не ставить себе
+                                            задачей участие в соревнованиях,
+                                            тренировки муай тай однозначно помогут поверить в свои силы. Но для того чтобы
+                                            достичь какого-то прогресса, надо
+                                            заниматься минимум три раза в неделю. После того как я начала заниматься тайским
+                                            боксом, я стала гораздо увереннее в
+                                            себе.Это была уверенность в том, что мне под силу постоять за себя, пусть даже
+                                            это придёться делать физически. Мне
+                                            стало легче жить и справляться со стрессом, к тому же выложиться на тренировке -
+                                            это эффективный способ избавиться
+                                            от раздражения. Уже спустя полгода тренировок я поверила в свои силы, когда в
+                                            лёгком спарринге одержала победу над
+                                            новичком,пришедшим из классического бокса.Я просто использовала колени,поняв что
+                                            на кулаках он сильнее меня. В любом
+                                            случае возможность выучить пару-тройку простых ударов и в целом стать крепче
+                                            физически - однозначный плюс. К тому же
+                                            любая девушка хоть раз попробовшая себя в единоборстве,расширяет возможности
+                                            самореализации.
+                                        </span>
+                                        <span>
+                                            Однажды на тренировке парень спросил меня:"Зачем ты пошла на тайский бокс, ведь
+                                            это не женское занятие?"
+                                        </span>
+
+                                        Я спросила - водит его мама машину, и носит ли его сестра джинсы. Разумеется он
+                                        ответил утвердительно, ведь ему и в
+                                        голову не могло прийти что в некоторых странах мира это до сих пор "не женское
+                                        занятие".
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="services__item" data-tab="personal">
+                            <input class="services__checkbox visually-hidden" type="checkbox" id="personal-group">
+                            <label class="services__toggle-mobile third-title" for="personal-group">Индивидуальные
+                                тренировки</label>
+                            <div class="services__content">
+                                <div class="services__inner services__inner--inner">
+                                    <div class="services__img-wrapper services__img-wrapper--inner">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="img/person-desktop-2.jpg">
+                                            <img class="services__img" src="img/person-mobile.jpg" alt="Детская группа"
+                                                width="283" height="290">
+                                        </picture>
+                                    </div>
+                                    <p class="services__text services__text--inner">
+                                        
+                                            Индивидуальные или персональные тренировки по тайскому боксу в нашем зале
+                                            проходят по определенной программе. Весь
+                                            тренировочный процесс проходит по индивидуальному плану под конкретного
+                                            человека. Индивидуальная программа
+                                            тренировок по тайскому боксу разрабатывается тренером с учетом степени
+                                            физической подготовки клиента. Поэтому
+                                            индивидуальные занятия проходят с учетом исходной спортивной формы и цели,
+                                            которую хочет достичь тренирующийся.
+                                        
+                                        
+                                        <span>
+                                            Для индивидуальных тренировок по тайскому боксу нет определенных возрастных
+                                            рамок. Нагрузки при занятиях муай-тай
+                                            корректируются индивидуально на каждой тренировке с учётом физического и
+                                            психологического состояния клиента на
+                                            сегодняшний день, а также нагрузки предшествовавшей тренировке.
+                                        </span>
+                                            Все свое внимание на индивидуальной тренировке тренер уделяет только клиенту.
+                                            Следовательно, персональные занятия
+                                            дают возможность моментальной коррекции ошибок в технике исполнения удара или
+                                            защиты из арсенала тайского бокса.
+                                            Работа с тренером позволит в короткие сроки достичь максимальных результатов.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="program">
+            <div class="program__wrapper">
+                <div class="program__title-wrapper">
+                    <h2 class="program__title second-title">Программа тренировок </h2>
+                    <p class="program__text">
+                        Тренировка в тайском боксе (муай тай) состоит из двух частей. Это многократное повторение
+                        основ — базовой техники
+                        и тренировка с партнёром или условно-вольный бой (спарринг). Занимающиеся, показывающие высокие
+                        результаты освоения
+                        программы могут быть переведены на программу спортивной подготовки.
+                    </p>
+                </div>
+                <div class="program__steps-wrapper">
+                    <div class="program__step-wrapper">
+                        <h3 class="program__step-title">1. Первый этап тренировки</h3>
+                        <p class="program__text">
+                            На первом этапе тренировочного подготовительного периода ставится задача повышения уровня
+                            общей физической
+                            подготовки, развития силы, быстроты, выносливости, двигательных навыков. А также овладения
+                            основными элементами
+                            тайского бокса: ударами рук, ног, коленями и локтями; защитой, борьбы в клинче: захватами,
+                            скрутками;
+                            передвижениями; усвоения теоретических знаний.
+                        </p>
+                    </div>
+                    <div class="program__step-wrapper">
+                        <h3 class="program__step-title">2. Второй этап тренировки</h3>
+                        <p class="program__text">
+                            На втором этапе продолжается развитие физических качеств, совершенствование техники тайского
+                            бокса, изучаются
+                            элементы тактики, организуются спортивные, тренировочные и контрольные поединки. Большое
+                            внимание уделяется
+                            развитию
+                            моральных и волевых качеств.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="advantages-wrapper advantages-wrapper--inner-page">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <ul class="intro__advantages advantages">
+                <li class="advantages__item">
+                    <p class="advantages__text">Удобный график посещений</p>
+                    <p class="advantages__text">(<b>6 дней</b> в неделю)</p>
+                </li>
+                <li class="advantages__item">
+                    <p class="advantages__text">Пешая доступность</p>
+                    <p class="advantages__text">(<b>5 мин</b> от метро)</p>
+                <li class="advantages__item">
+                    <p class="advantages__text">Участие в турнирах и</p>
+                    <p class="advantages__text">соревнованиях <b>высокого</b>уровня</p>
+                </li>
+                <li class="advantages__item">
+                    <b>Индивидуальный</b> подход <br>к каждому
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="tables tables--inner-page" id="price">
+
+            <div class="tables__wrapper">
+
+                <h2 class="tables__title second-title">Расписание тренировок</h2>
+
+                <table class="tables__table tables__table--days">
+                    <tr>
+                        <th class="tables__left-col tables__border-none"></th>
+                        <th>Вторник</th>
+                        <th>Четверг</th>
+                        <th>Суббота</th>
+                    </tr>
+                    <tr class="tables__row-2">
+                        <td class="tables__left-col">Тайский бокс от 6 лет (детская группа)</td>
+                        <td>с 17:00</td>
+                        <td>с 17:00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tables__left-col">Тайский бокс от 6 лет (детская группа)</td>
+                        <td>с 19:00</td>
+                        <td>с 19:00</td>
+                        <td>с 16:00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tables__wrapper">
+
+
+                <h2 class="tables__title second-title">Цены на занятия</h2>
+
+                <table class="tables__table tables__table--price">
+                    <tr>
+                        <th>Услуги</th>
+                        <th>Цена</th>
+                    </tr>
+                    <tr class="table-days__row-2">
+                        <td>Абонемент (8 занятий)</td>
+                        <td>4800 рублей</td>
+                    </tr>
+                    <tr class="table-days__row-3">
+                        <td>Разовая тренировка</td>
+                        <td>1000 рублей</td>
+                    </tr>
+                    <tr class="table-days__row-4">
+                        <td>Персональные тренировки </td>
+                        <td>3000 рублей</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+
+        <section class="answers">
+
+            <h2 class="answers__title second-title">Ответы на часто задаваемые вопросы</h2>
+
+            <div class="answers__list-wrapper">
+
+                <ul class="answers__list">
+
+                    <li class="answers__item answers__item--active">
+
+                        <input class="answers__switch visually-hidden" type="checkbox" id="answer-1" checked>
+                        <label class="answers__btn" for="answer-1">Чему я могу научиться на ваших занятиях?
+                            
+                            <svg class="answers__icon" width="22" height="17" fill="none">
+                                <path  d="M1 1l9.6 14.4c.2.3.6.3.8 0L21 1" stroke="#332B2B" stroke-width="2" />
+                            </svg>
+                        </label>
+                        <div class="answers__content">
+
+                            <p class="answers__text">
+                                На тренировках в нашем зале тайского бокса Вы научитесь:
+                                Как правильно защищаться от ударов в голову, в туловище и по ногам.
+                                Наносить удары кулаками, локтями, голенью, стопой, коленями.
+                                Выполнять правильно технические действия в тайском клинче.
+                                Правильно передвигаться в тайском стиле на ринге.
+                                Этой азбуке тайского бокса у нас могут научиться все желающие независимо от возраста и
+                                дети, и юноши и девушки,
+                                женщины и мужчины. Если нет противопоказаний отбросьте все страхи и сомнения. В нашем
+                                зале занимаются люди разного
+                                возраста.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="answers__item">
+                        <input class="answers__switch visually-hidden" type="checkbox" id="answer-2">
+                        <label class="answers__btn" for="answer-2">Что нужно на первое занятие?
+                            <svg class="answers__icon" width="22" height="17" fill="none">
+                                <path  d="M1 1l9.6 14.4c.2.3.6.3.8 0L21 1" stroke="#332B2B" stroke-width="2" />
+                            </svg>
+                        </label>
+                        <div class="answers__content">
+
+                            <p class="answers__text">
+                                Если вы уже решили заниматься тайским боксом, то следующая информация поможет вам
+                                убедиться в правильности своего
+                                решения. Что в первую очередь надо знать новичку? Тайский бокс, как вид физической
+                                активности подходит любому
+                                человеку без серьёзных заболеваний и медицинских противопоказаний. Тайский бокс - это
+                                отличный выбор для достижения
+                                начинающему таких целей как: укрепление здоровья и улучшение физической формы тела,
+                                кроме того, разнообразие
+                                тренировочных программ на занятиях тайским боксом прекрасно развивают все физические
+                                качества (силу, скорость,
+                                выносливость, координацию и гибкость).
+                                Ещё одним важным плюсом муай тай является психологическая закалка. Являясь боевым
+                                искусством тайский бокс
+                                способствует развитию таких качеств как : уверенность, целеустремлённость, упорство,
+                                смелость и решительность. Если
+                                же перед вами стоит задача научиться самообороне, то тайский бокс то что нужно вам. Так
+                                как именно муай тай
+                                считается жёстким и наиболее действенным боевым оружием. Выбирая тайский бокс, вы
+                                выбираете здоровый и активный
+                                образ жизни.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="answers__item">
+                        <input class="answers__switch visually-hidden" type="checkbox" id="answer-3">
+                        <label class="answers__btn" for="answer-3">Тайский бокс это травмы, сломанный нос и прочее?
+                            <svg class="answers__icon" width="22" height="17" fill="none">
+                                <path  d="M1 1l9.6 14.4c.2.3.6.3.8 0L21 1" stroke="#332B2B" stroke-width="2" />
+                            </svg>
+                        </label>
+                        <div class="answers__content">
+
+                            <p class="answers__text">
+                                В современном мире каждая девушка хочет уметь постоять за себя. Также большая часть из
+                                них заботится о своей
+                                внешности. Именно из-за этого тайский бокс набирает большую популярность среди
+                                прекрасной части населения нашей
+                                планеты. Дамы ломают стереотипы о своей слабости доказывая всем, а в первую очередь
+                                себе, что непреодолимых преград
+                                не существует. Несмотря на то что муай тай контактный вид единоборства, девушек
+                                занимающихся этим видом спорта
+                                становится всё больше с каждым днём. Это не удивительно, ведь пользы от тренировок в
+                                тайском боксе очень много.
+                                Занятия тайским боксом заменяют комплексы упражнений на растяжку и отдельные упражнения
+                                для мышц ягодиц, пресса, ног
+                                и груди. Это позволяет поддерживать свою фигуру в форме, не прилагая отдельных усилий.
+                                Постоянные тренировки, при условии разумной диеты, способствуют нормализации (сбросу)
+                                веса и улучшению фигуры.
+                                Занимаясь тайским боксом вы станете более ловкой, грациозной и изящной.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="answers__item">
+                        <input class="answers__switch visually-hidden" type="checkbox" id="answer-4">
+                        <label class="answers__btn" for="answer-4">Когда будет виден результат занятий тайским боксом?
+                            <svg class="answers__icon" width="22" height="17" fill="none">
+                                <path  d="M1 1l9.6 14.4c.2.3.6.3.8 0L21 1" stroke="#332B2B" stroke-width="2" />
+                            </svg>
+                        </label>
+                        <div class="answers__content">
+
+                            <p class="answers__text">
+                                Индивидуальные или персональные тренировки по тайскому боксу в нашем зале проходят по
+                                определенной программе. Весь
+                                тренировочный процесс проходит по индивидуальному плану под конкретного человека.
+                                Индивидуальная программа
+                                тренировок по тайскому боксу разрабатывается тренером с учетом степени физической
+                                подготовки клиента. Поэтому
+                                индивидуальные занятия проходят с учетом исходной спортивной формы и цели, которую хочет
+                                достичь тренирующийся.
+                                Индивидуальные или персональные тренировки по тайскому боксу в нашем зале проходят по
+                                определенной программе. Весь
+                                тренировочный процесс проходит по индивидуальному плану под конкретного человека.
+                                Индивидуальная программа
+                                тренировок по тайскому боксу разрабатывается тренером с учетом степени физической
+                                подготовки клиента. Поэтому
+                                индивидуальные занятия проходят с учетом исходной спортивной формы и цели, которую хочет
+                                достичь тренирующийся.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </section>
+
+
+        <section class="form-inner" id="form-section">
+            <div class="form__wrapper">
+
+                <div class="form__text-wrapper">
+                    <h2 class="form__title second-title">Хотите начать посещать занятия?</h2>
+                    <p class="form__text">Оставьте свои контакты и наш менеджер свяжется с Вами</p>
+                </div>
+
+                <form class="form__main-form" action="post">
+                    <input class="form__input" type="text" name="user-name" placeholder="Имя">
+                    <input class="form__input" type="tel" name="phone-number" placeholder="Телефон">
+                    <input class="form__input" type="email" name="e-mail" placeholder="E-mail">
+
+                    <button class="form__btn" type="submit">Свяжитесь со мной</button>
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="main-footer">
+
+        
+        <div class="main-footer__wrapper">
+
+            
+            <div class="main-footer__inner">
+                <div class="main-footer__phones">
+                    <a class="main-footer__logo logo" href="index.html">
+                        <img class="main-footer__img logo__img" src="img/logo.svg" alt="Raja muay thai">
+                    </a>
+        
+                    <div class="main-footer__phones-block">
+                        <p class="main-footer__phone">8(916)807-21-21</p>
+                        <p class="main-footer__phone">8(916)807-21-21</p>
+                    </div>
+                </div>
+        
+        
+                <nav class="main-footer__nav">
+                    <h3 class="main-footer__nav-title main-footer__group-title">Ссылки</h3>
+                    <ul class="main-footer__nav-list">
+                        <li class="main-footer__nav-item">
+                            <a class="main-footer__nav-link" href="#">Для девушек</a>
+                        </li>
+                        <li class="main-footer__nav-item">
+                            <a class="main-footer__nav-link" href="#">Для начинающих</a>
+                        </li>
+                        <li class="main-footer__nav-item">
+                            <a class="main-footer__nav-link" href="#">Для детей</a>
+                        </li>
+                        <li class="main-footer__nav-item">
+                            <a class="main-footer__nav-link" href="articles.html">Статьи</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+        
+                <div class="main-footer__partners">
+                    <h3 class="main-footer__partners-title main-footer__group-title">Партнеры</h3>
+                    <div class="main-footer__partners-inner">
+                        <a href="http://rmtf.ru/">
+                            <img class="main-footer__partner-img" src="img/partneer-1.png"  alt="Федерация тайского бокса-муайтай России" width="130" height="130">
+                        </a>
+                        <a href="http://www.muaythai-moscow.ru/">
+                            <img class="main-footer__partner-img" src="img/partneer-2.png" alt="Федерация тайского бокса города Москвы" width="130" height="130">
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="main-footer__socials">
+                    <h3 class="main-footer__socials-title main-footer__group-title">Социальные сети</h3>
+                    <ul class="main-footer__socials-list">
+                        <li class="main-footer__socials-list-item">
+                            <a class="main-footer__social-link" href="#">Instagram</a>
+                        </li>
+                        <li class="main-footer__socials-list-item">
+                            <a class="main-footer__social-link" href="#">ВКонтакте</a>
+                        </li>
+                        <li class="main-footer__socials-list-item">
+                            <a class="main-footer__social-link" href="#">facebook</a>
+                        </li>
+                    </ul>
+                </div>
+        
+        
+            </div>
+        
+        
+            <div class="main-footer__copyright-wrapper">
+                <p class="main-footer__copyright">
+                    Клуб тайского бокса "Raja Muay Thai" © 2020 Все права защищены
+                </p>
+            </div>
+
+
+        </div>
+
+</footer>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
